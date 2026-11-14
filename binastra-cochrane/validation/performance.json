@@ -1,0 +1,18 @@
+{
+  "profile": "390 × 844 viewport; cold cache; 4× CPU slowdown; 4 Mbps download; 100 ms latency; localhost server",
+  "lcpMs": 1564,
+  "cls": 0.0001,
+  "paint": [
+    {
+      "name": "first-paint",
+      "ms": 500
+    },
+    {
+      "name": "first-contentful-paint",
+      "ms": 500
+    }
+  ],
+  "initialResourceBytes": 662364,
+  "heroSource": "http://127.0.0.1:8080/assets/images/architecture-mobile.jpg",
+  "externalResources": 0
+}

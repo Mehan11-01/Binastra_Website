@@ -1,0 +1,406 @@
+{
+  "checks": [
+    {
+      "name": "All 12 requested homepage areas exist",
+      "pass": true
+    },
+    {
+      "name": "Every internal anchor resolves",
+      "pass": true
+    },
+    {
+      "name": "All content images load",
+      "pass": true
+    },
+    {
+      "name": "Three local fonts loaded",
+      "pass": true
+    },
+    {
+      "name": "No horizontal page overflow at 360px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal page overflow at 390px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal page overflow at 768px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal page overflow at 1024px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal page overflow at 1440px",
+      "pass": true
+    },
+    {
+      "name": "Layout study-01: image, label, selected state and enquiry message",
+      "pass": true
+    },
+    {
+      "name": "Layout study-02: image, label, selected state and enquiry message",
+      "pass": true
+    },
+    {
+      "name": "Layout study-03: image, label, selected state and enquiry message",
+      "pass": true
+    },
+    {
+      "name": "Location transport: filters destinations",
+      "pass": true
+    },
+    {
+      "name": "Location cochrane: panel and schematic update",
+      "pass": true
+    },
+    {
+      "name": "Location trx: panel and schematic update",
+      "pass": true
+    },
+    {
+      "name": "Location lifestyle: filters destinations",
+      "pass": true
+    },
+    {
+      "name": "Location mytown: panel and schematic update",
+      "pass": true
+    },
+    {
+      "name": "Location velocity: panel and schematic update",
+      "pass": true
+    },
+    {
+      "name": "Location education: filters destinations",
+      "pass": true
+    },
+    {
+      "name": "Location taylors: panel and schematic update",
+      "pass": true
+    },
+    {
+      "name": "Location healthcare: filters destinations",
+      "pass": true
+    },
+    {
+      "name": "Location medical: panel and schematic update",
+      "pass": true
+    },
+    {
+      "name": "Timeline monash: panel and source visibility",
+      "pass": true
+    },
+    {
+      "name": "Timeline ethos: panel and source visibility",
+      "pass": true
+    },
+    {
+      "name": "Timeline cochrane-two: panel and source visibility",
+      "pass": true
+    },
+    {
+      "name": "Gallery architecture: correct images and count",
+      "pass": true
+    },
+    {
+      "name": "Gallery lifestyle: correct images and count",
+      "pass": true
+    },
+    {
+      "name": "Gallery neighbourhood: correct images and count",
+      "pass": true
+    },
+    {
+      "name": "Gallery all: correct images and count",
+      "pass": true
+    },
+    {
+      "name": "Viewer arrival opens",
+      "pass": true
+    },
+    {
+      "name": "Viewer arrival: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Viewer pool opens",
+      "pass": true
+    },
+    {
+      "name": "Viewer pool: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Viewer trx opens",
+      "pass": true
+    },
+    {
+      "name": "Viewer trx: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Viewer interior opens",
+      "pass": true
+    },
+    {
+      "name": "Viewer interior: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Viewer bridge opens",
+      "pass": true
+    },
+    {
+      "name": "Viewer bridge: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Viewer pavilion opens",
+      "pass": true
+    },
+    {
+      "name": "Viewer pavilion: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Viewer next respects active filter",
+      "pass": true
+    },
+    {
+      "name": "Viewer previous works",
+      "pass": true
+    },
+    {
+      "name": "Viewer arrow key wraps within filter",
+      "pass": true
+    },
+    {
+      "name": "Viewer keeps keyboard focus inside dialog",
+      "pass": true
+    },
+    {
+      "name": "Viewer close button works",
+      "pass": true
+    },
+    {
+      "name": "Enquiry overview: WhatsApp message updates",
+      "pass": true
+    },
+    {
+      "name": "Enquiry plans: WhatsApp message updates",
+      "pass": true
+    },
+    {
+      "name": "Enquiry viewing: WhatsApp message updates",
+      "pass": true
+    },
+    {
+      "name": "Enquiry future: WhatsApp message updates",
+      "pass": true
+    },
+    {
+      "name": "All WhatsApp links use approved representative number and encoded topic",
+      "pass": true
+    },
+    {
+      "name": "Enquiry event contains identifiers only",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu opens with expanded state",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu Escape restores toggle focus",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation #overview",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation #facilities",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation #floor-plans",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation #location",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation #future",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation #gallery",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation #enquire",
+      "pass": true
+    },
+    {
+      "name": "Privacy link opens notice",
+      "pass": true
+    },
+    {
+      "name": "Hero scroll link stays above sticky WhatsApp bar",
+      "pass": true
+    },
+    {
+      "name": "No production tracking scripts, embeds or storage",
+      "pass": true
+    },
+    {
+      "name": "All page resources are local",
+      "pass": true
+    },
+    {
+      "name": "No browser JavaScript or resource errors",
+      "pass": true
+    },
+    {
+      "name": "No-JavaScript content and navigation remain available",
+      "pass": true
+    }
+  ],
+  "responsive": [
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "bodyWidth": 360,
+      "overflow": []
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "overflow": []
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": []
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        "color-contrast",
+        "link-in-text-block"
+      ],
+      "passes": 46
+    },
+    {
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "passes": 46
+    }
+  ],
+  "errors": [],
+  "network": [
+    {
+      "name": "http://127.0.0.1:8080/styles.css",
+      "size": 41348,
+      "duration": 2
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/fonts/cormorant-medium.woff2",
+      "size": 300,
+      "duration": 1
+    },
+    {
+      "name": "http://127.0.0.1:8080/script.js",
+      "size": 300,
+      "duration": 3
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/architecture.jpg",
+      "size": 300,
+      "duration": 3
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/fonts/inter-regular.woff2",
+      "size": 300,
+      "duration": 4
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/fonts/cormorant-italic.woff2",
+      "size": 300,
+      "duration": 4
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/link-bridge.jpg",
+      "size": 300,
+      "duration": 2
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/pool-illustrative.jpg",
+      "size": 300,
+      "duration": 2
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/layout-01.svg",
+      "size": 300,
+      "duration": 2
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/trx.jpg",
+      "size": 300,
+      "duration": 3
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/interior-illustrative.jpg",
+      "size": 300,
+      "duration": 3
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/pavilion.jpg",
+      "size": 300,
+      "duration": 4
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/layout-02.svg",
+      "size": 300,
+      "duration": 1
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/layout-03.svg",
+      "size": 300,
+      "duration": 1
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/architecture-mobile.jpg",
+      "size": 300,
+      "duration": 3
+    },
+    {
+      "name": "http://127.0.0.1:8080/assets/images/architecture-mobile.jpg",
+      "size": 0,
+      "duration": 1
+    }
+  ]
+}
