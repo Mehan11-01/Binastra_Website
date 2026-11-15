@@ -1,0 +1,78 @@
+{
+  "interactions": {
+    "cards": 2,
+    "controls": 5,
+    "states": [
+      {
+        "key": "monash-announcement",
+        "pressed": "true",
+        "year": "2025",
+        "title": "Monash University announcement",
+        "source": "https://www.monash.edu/news/articles/monash-universitys-future-campus-in-malaysia4"
+      },
+      {
+        "key": "ethos-announcement",
+        "pressed": "true",
+        "year": "2026",
+        "title": "Menara Ethos officially named",
+        "source": "https://trx.my/press-release/trxs-momentum-is-on-track-with-its-10th-building-menara-ethos/"
+      },
+      {
+        "key": "ethos-target",
+        "pressed": "true",
+        "year": "2029",
+        "title": "Office development target",
+        "source": "https://trx.my/press-release/trx-city-breaks-ground-on-new-office-tower-anchored-by-pwc-malaysia/"
+      },
+      {
+        "key": "monash-target",
+        "pressed": "true",
+        "year": "2032",
+        "title": "Future Monash campus target",
+        "source": "https://www.monash.edu/news/articles/monash-universitys-future-campus-in-malaysia4"
+      },
+      {
+        "key": "monash-vision",
+        "pressed": "true",
+        "year": "2040+",
+        "title": "Long-term campus vision",
+        "source": "https://www.monash.edu/news/articles/monash-universitys-future-campus-in-malaysia4"
+      }
+    ],
+    "whatsapp": "https://wa.me/60198995496?text=Hi%20Premm%2C%20Please%20share%20verified%20updates%20on%20Menara%20Ethos%20in%20the%20wider%20TRX%20district.",
+    "errors": []
+  },
+  "mobile": {
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "cardColumns": "358px",
+    "timelineOverflow": "auto"
+  },
+  "responsive": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "cards": "328px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "cards": "358px"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "cards": "720px"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "cards": "474px 474px"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "cards": "576px 576px"
+    }
+  ]
+}

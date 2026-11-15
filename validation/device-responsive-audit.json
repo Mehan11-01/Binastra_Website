@@ -1,0 +1,283 @@
+{
+  "devtoolsSafety": {
+    "contextMenuAllowed": true,
+    "f12Allowed": true,
+    "ctrlShiftIAllowed": true,
+    "contextHandler": null,
+    "bodyContextHandler": null
+  },
+  "responsive": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 411
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 367
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 378
+        },
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 537
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 493
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 509
+        },
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 663
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 624
+        }
+      ],
+      "navMode": "flex",
+      "futureColumns": "292px",
+      "galleryColumns": "288px"
+    },
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 411
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 367
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 378
+        },
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 537
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 493
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 509
+        },
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 663
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 624
+        }
+      ],
+      "navMode": "flex",
+      "futureColumns": "332px",
+      "galleryColumns": "328px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 411
+        },
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 537
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 493
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 509
+        },
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 663
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 624
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 635
+        }
+      ],
+      "navMode": "flex",
+      "futureColumns": "362px",
+      "galleryColumns": "358px"
+    },
+    {
+      "width": 430,
+      "scrollWidth": 430,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 537
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 493
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 509
+        },
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 663
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 624
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 635
+        }
+      ],
+      "navMode": "flex",
+      "futureColumns": "402px",
+      "galleryColumns": "398px"
+    },
+    {
+      "width": 600,
+      "scrollWidth": 600,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "className": "",
+          "right": 671
+        },
+        {
+          "tag": "STRONG",
+          "className": "",
+          "right": 632
+        },
+        {
+          "tag": "SPAN",
+          "className": "",
+          "right": 643
+        }
+      ],
+      "navMode": "flex",
+      "futureColumns": "564px",
+      "galleryColumns": "266px 266px"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "navMode": "flex",
+      "futureColumns": "732px",
+      "galleryColumns": "350px 350px"
+    },
+    {
+      "width": 820,
+      "scrollWidth": 820,
+      "overflow": [],
+      "navMode": "flex",
+      "futureColumns": "374px 374px",
+      "galleryColumns": "244px 244px 244px"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "overflow": [],
+      "navMode": "none",
+      "futureColumns": "476px 476px",
+      "galleryColumns": "312px 312px 312px"
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "overflow": [],
+      "navMode": "none",
+      "futureColumns": "538px 538px",
+      "galleryColumns": "380px 380px 380px"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "navMode": "none",
+      "futureColumns": "538px 538px",
+      "galleryColumns": "380px 380px 380px"
+    },
+    {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "overflow": [],
+      "navMode": "none",
+      "futureColumns": "538px 538px",
+      "galleryColumns": "380px 380px 380px"
+    }
+  ],
+  "mobileMenu": {
+    "opened": true,
+    "closed": true
+  },
+  "controls": {
+    "milestones": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "plans": [
+      true,
+      true,
+      true
+    ]
+  },
+  "browserErrors": []
+}

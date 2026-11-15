@@ -1,0 +1,244 @@
+{
+  "interaction": {
+    "categoryResults": {
+      "transport": 2,
+      "lifestyle": 6,
+      "education": 6,
+      "healthcare": 3
+    },
+    "itemResults": [
+      {
+        "key": "cochrane",
+        "selected": true,
+        "row": "Cochrane MRT",
+        "listDistance": "70m",
+        "title": "Cochrane MRT",
+        "detailDistance": "Approx. 70m from Binastra Cochrane",
+        "category": "TRANSPORT",
+        "status": "EXISTING TRANSPORT",
+        "description": "An established station on the Kajang Line, connecting the Cochrane district with the wider city. Walking routes and project access arrangements should be confirmed with your advisor."
+      },
+      {
+        "key": "maluri",
+        "selected": true,
+        "row": "MRT Maluri",
+        "listDistance": "Distance to confirm",
+        "title": "MRT Maluri",
+        "detailDistance": "Distance to be confirmed",
+        "category": "TRANSPORT",
+        "status": "EXISTING MRT & LRT INTERCHANGE",
+        "description": "An established MRT and LRT interchange serving the Maluri area. This is a separate station from MRT Cochrane."
+      },
+      {
+        "key": "mytown",
+        "selected": true,
+        "row": "MyTOWN Shopping Centre & IKEA Cheras",
+        "listDistance": "60m",
+        "title": "MyTOWN Shopping Centre & IKEA Cheras",
+        "detailDistance": "Approx. 60m from Binastra Cochrane",
+        "category": "SHOPPING & LIFESTYLE",
+        "status": "EXISTING RETAIL DESTINATION",
+        "description": "A major retail destination combining shopping, dining, entertainment and IKEA Cheras within one precinct."
+      },
+      {
+        "key": "velocity",
+        "selected": true,
+        "row": "Sunway Velocity Mall",
+        "listDistance": "400m",
+        "title": "Sunway Velocity Mall",
+        "detailDistance": "Approx. 400m from Binastra Cochrane",
+        "category": "SHOPPING & LIFESTYLE",
+        "status": "EXISTING RETAIL DESTINATION",
+        "description": "An integrated shopping destination offering retail, dining, entertainment and everyday services."
+      },
+      {
+        "key": "berjaya",
+        "selected": true,
+        "row": "Berjaya Times Square",
+        "listDistance": "2.6km",
+        "title": "Berjaya Times Square",
+        "detailDistance": "Approx. 2.6km from Binastra Cochrane",
+        "category": "SHOPPING & LIFESTYLE",
+        "status": "EXISTING RETAIL DESTINATION",
+        "description": "A city-centre shopping and entertainment destination with a broad mix of retail and leisure offerings."
+      },
+      {
+        "key": "exchange",
+        "selected": true,
+        "row": "The Exchange TRX",
+        "listDistance": "3.4km",
+        "title": "The Exchange TRX",
+        "detailDistance": "Approx. 3.4km from Binastra Cochrane",
+        "category": "SHOPPING & LIFESTYLE",
+        "status": "EXISTING RETAIL DESTINATION",
+        "description": "A contemporary retail and lifestyle destination within the Tun Razak Exchange financial district."
+      },
+      {
+        "key": "pavilionKl",
+        "selected": true,
+        "row": "Pavilion Kuala Lumpur",
+        "listDistance": "3.6km",
+        "title": "Pavilion Kuala Lumpur",
+        "detailDistance": "Approx. 3.6km from Binastra Cochrane",
+        "category": "SHOPPING & LIFESTYLE",
+        "status": "EXISTING RETAIL DESTINATION",
+        "description": "A prominent Bukit Bintang destination offering international retail, dining and entertainment."
+      },
+      {
+        "key": "suria",
+        "selected": true,
+        "row": "Suria KLCC",
+        "listDistance": "4.9km",
+        "title": "Suria KLCC",
+        "detailDistance": "Approx. 4.9km from Binastra Cochrane",
+        "category": "SHOPPING & LIFESTYLE",
+        "status": "EXISTING RETAIL DESTINATION",
+        "description": "An established city-centre mall bringing together retail, dining and cultural attractions at KLCC."
+      },
+      {
+        "key": "smkCochrane",
+        "selected": true,
+        "row": "SMK Cochrane",
+        "listDistance": "220m",
+        "title": "SMK Cochrane",
+        "detailDistance": "Approx. 220m from Binastra Cochrane",
+        "category": "EDUCATION",
+        "status": "EXISTING SCHOOL",
+        "description": "An established secondary school serving the Cochrane community."
+      },
+      {
+        "key": "sunwayCollege",
+        "selected": true,
+        "row": "Sunway College @ Velocity",
+        "listDistance": "430m",
+        "title": "Sunway College @ Velocity",
+        "detailDistance": "Approx. 430m from Binastra Cochrane",
+        "category": "EDUCATION",
+        "status": "EXISTING EDUCATION",
+        "description": "A city education centre supporting students with a range of academic pathways."
+      },
+      {
+        "key": "ideasSchool",
+        "selected": true,
+        "row": "IDEAS International School",
+        "listDistance": "1.1km",
+        "title": "IDEAS International School",
+        "detailDistance": "Approx. 1.1km from Binastra Cochrane",
+        "category": "EDUCATION",
+        "status": "EXISTING SCHOOL",
+        "description": "An international school offering a structured learning environment for its student community."
+      },
+      {
+        "key": "kunMing",
+        "selected": true,
+        "row": "SJK(C) Kun Ming",
+        "listDistance": "1.6km",
+        "title": "SJK(C) Kun Ming",
+        "detailDistance": "Approx. 1.6km from Binastra Cochrane",
+        "category": "EDUCATION",
+        "status": "EXISTING SCHOOL",
+        "description": "An established Chinese primary school serving families in Kuala Lumpur."
+      },
+      {
+        "key": "taylors",
+        "selected": true,
+        "row": "Taylor's International School",
+        "listDistance": "2.0km",
+        "title": "Taylor's International School",
+        "detailDistance": "Approx. 2.0km from Binastra Cochrane",
+        "category": "EDUCATION",
+        "status": "EXISTING SCHOOL",
+        "description": "An established international school providing education for its student community."
+      },
+      {
+        "key": "monashTrx",
+        "selected": true,
+        "row": "Future Monash University TRX Campus",
+        "listDistance": "4.0km",
+        "title": "Future Monash University TRX Campus",
+        "detailDistance": "Approx. 4.0km from Binastra Cochrane",
+        "category": "EDUCATION",
+        "status": "ANNOUNCED FUTURE CAMPUS",
+        "description": "Monash University has announced a future Kuala Lumpur campus at TRX. It is planned for the district and is not currently operating there."
+      },
+      {
+        "key": "medical",
+        "selected": true,
+        "row": "Sunway Medical Centre Velocity",
+        "listDistance": "500m",
+        "title": "Sunway Medical Centre Velocity",
+        "detailDistance": "Approx. 500m from Binastra Cochrane",
+        "category": "HEALTHCARE",
+        "status": "EXISTING HEALTHCARE",
+        "description": "An established medical centre providing healthcare services within the wider city district."
+      },
+      {
+        "key": "princeCourt",
+        "selected": true,
+        "row": "Prince Court Medical Centre",
+        "listDistance": "2.7km",
+        "title": "Prince Court Medical Centre",
+        "detailDistance": "Approx. 2.7km from Binastra Cochrane",
+        "category": "HEALTHCARE",
+        "status": "EXISTING HEALTHCARE",
+        "description": "A private medical centre offering specialist and general healthcare services in Kuala Lumpur."
+      },
+      {
+        "key": "tungShin",
+        "selected": true,
+        "row": "Tung Shin Hospital",
+        "listDistance": "4.5km",
+        "title": "Tung Shin Hospital",
+        "detailDistance": "Approx. 4.5km from Binastra Cochrane",
+        "category": "HEALTHCARE",
+        "status": "EXISTING HEALTHCARE",
+        "description": "An established Kuala Lumpur hospital providing a range of medical and healthcare services."
+      }
+    ]
+  },
+  "responsive": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "panelColumns": "286px",
+      "tabColumns": "142.5px 142.5px"
+    },
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "panelColumns": "326px",
+      "tabColumns": "162.5px 162.5px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "panelColumns": "356px",
+      "tabColumns": "177.5px 177.5px"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "panelColumns": "718px",
+      "tabColumns": "none"
+    },
+    {
+      "width": 820,
+      "scrollWidth": 820,
+      "panelColumns": "385px 385px",
+      "tabColumns": "none"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "panelColumns": "487px 487px",
+      "tabColumns": "none"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "panelColumns": "589px 589px",
+      "tabColumns": "none"
+    }
+  ],
+  "browserErrors": []
+}

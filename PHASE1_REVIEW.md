@@ -1,8 +1,14 @@
 # Phase 1 implementation and review
 
 **Review date:** 15 November 2026, Asia/Kuala_Lumpur  
-**Status:** Phase 1 homepage and demonstration interactions complete; factual/asset placeholders remain explicitly identified.  
-**Delivery:** New `binastra-cochrane/` project only. No deployment, publication, production advertising tags or Phase 2 work.
+**Status:** Phase 1 homepage and demonstration interactions complete; the design and structure were rebuilt on 15 November 2026 using Bangsar Projects as the requested reference. Factual and asset placeholders remain explicitly identified.
+**Delivery:** Standalone local project at the repository root. No deployment, publication, production advertising tags or Phase 2 work.
+
+## Reference-led redesign
+
+The rebuild adopts the reference site’s direct property-marketing journey without copying its Bangsar claims or source code: credential bar, navigation over a full-height hero, centred project pitch, rounded CTAs, benefit cards, location categories, transit sequence, layout selector, project-briefing banner, gallery, advisor profile and contact close.
+
+The Cochrane version uses dark teal, warm ivory, gold and WhatsApp green. Existing amenities remain separate from proposed and future developments. Unverified prices, specifications and delivery dates remain omitted.
 
 ## Completed features
 
@@ -21,17 +27,17 @@
 | 11. WhatsApp enquiry | Four enquiry topics, contextual prefilled messages, approved advisor number and sticky mobile CTA |
 | 12. Footer | Business identity/address, section links, back-to-top link, independent-operation disclaimer and expandable draft privacy notice |
 
-The design consistently uses the requested ivory, charcoal and champagne-gold palette, local Cormorant Garamond headings and local Inter text. Architectural imagery, varied editorial compositions, fine rules and restrained transitions carry through the entire page. Reduced-motion preferences disable animation and smooth scrolling.
+The design consistently uses dark teal, warm ivory, champagne gold and WhatsApp green, with local Cormorant Garamond headings and local Inter text. Reduced-motion preferences disable animation and smooth scrolling.
 
 ## Validation results
 
 Testing used an isolated **Chrome 157** session on macOS. The in-app browser execution tool was unavailable, so the installed Chrome browser was used for local QA. Viewport emulation is not physical-device testing.
 
-Saved visual references: `validation/desktop-preview.png` and `validation/mobile-preview.png`.
+Saved redesign previews: `validation/redesign-desktop.png` and `validation/redesign-mobile.png`.
 
 | Check | Result |
 | --- | --- |
-| Browser assertions | **67/67 passed** after corrections; recorded in `validation/browser-results.json` |
+| Redesign regression | **27/27 passed**; recorded in `validation/redesign-browser-results.json` |
 | Responsive widths | **360, 390, 768, 1024 and 1440 px**; no document/body horizontal overflow or detected protruding content |
 | Navigation | All main menu destinations work; mobile menu opens/closes, closes after navigation and supports Escape/focus return |
 | Floor plans | All three selections update drawing, summary, pressed state and enquiry context |
@@ -97,4 +103,4 @@ No unresolved failure was found in the tested Phase 1 interaction paths. The con
 5. Agree the final privacy wording and measurement requirements before installing any GTM container or advertising conversions. A WhatsApp click is not evidence that an enquiry was sent.
 6. Keep deployment and Phase 2 implementation pending your separate approval.
 
-No Bangsar Projects file or live website was changed. The initial workspace was empty; every deliverable was created inside the new project subdirectory.
+No Bangsar Projects file or live website was changed. It was inspected only as a public design reference. All implementation remains inside this repository.

@@ -1,26 +1,33 @@
 'use strict';
 
 (() => {
-  // Local-only Phase 1. No external tracking code or network requests are loaded.
+  // Local Phase 1. No external tracking code is loaded; the contact form posts only when submitted.
   const config = {
     advisor: { name: 'Premm', phone: '60198995496' },
     plans: {
-      'study-01': { title: 'Layout study 01', image: 'assets/images/layout-01.svg', description: 'An illustrative composition exploring connected spaces. Select another study to preview the interaction.' },
-      'study-02': { title: 'Layout study 02', image: 'assets/images/layout-02.svg', description: 'A different illustrative arrangement of shared and private spaces. This is a demonstration drawing, not an available project unit.' },
-      'study-03': { title: 'Layout study 03', image: 'assets/images/layout-03.svg', description: 'An alternative schematic composition for exploring the selector. Official layouts and specifications will replace these studies.' }
+      'study-01': { title: 'Type A', image: 'assets/images/TypeA.webp' },
+      'study-02': { title: 'Type B', image: 'assets/images/TypeB.webp' },
+      'study-03': { title: 'Type C', image: 'assets/images/TypeC.webp' },
+      'study-04': { title: 'Type C1', image: 'assets/images/TypeC1.webp' }
     },
     locations: {
-      cochrane: { category: 'transport', title: 'Cochrane MRT', status: 'Existing transport', description: 'An established station on the Kajang Line, connecting the Cochrane district with the wider city. Walking routes and project access arrangements should be confirmed with your advisor.' },
-      trx: { category: 'transport', title: 'Tun Razak Exchange', status: 'Existing district & MRT interchange', description: 'Explore the established TRX district and its MRT interchange. The future Monash campus is a separate announced development and is not an existing university campus here.' },
-      mytown: { category: 'lifestyle', title: 'MyTOWN & IKEA Cheras', status: 'Existing retail destinations', description: 'Shopping, dining and everyday essentials in the Cochrane district. The project’s proposed MyTOWN connection is an artist-impression concept here; delivery and access arrangements require confirmation.' },
-      velocity: { category: 'lifestyle', title: 'Sunway Velocity Mall', status: 'Existing retail destination', description: 'An established destination for shopping, dining and leisure in the surrounding district. Confirm your preferred route and current access arrangements before travelling.' },
-      taylors: { category: 'education', title: 'Taylor’s International School KL', status: 'Existing school', description: 'An established educational institution listed in the project website’s surrounding-area information. Admissions, routes and transport arrangements should be checked directly.' },
-      medical: { category: 'healthcare', title: 'Sunway Medical Centre Velocity', status: 'Existing healthcare', description: 'An established healthcare destination in the surrounding district. This explorer makes no travel-time, service-availability or distance claims.' }
-    },
-    milestones: {
-      monash: { index: '01', status: 'Announcement · 28 October 2025', title: 'A new chapter for education at TRX.', description: 'Monash University announced its future Kuala Lumpur campus with TRX City. This milestone records the announcement; it does not indicate an existing campus or guarantee delivery.', source: 'https://www.monash.edu/news/articles/monash-universitys-future-campus-in-malaysia4' },
-      ethos: { index: '02', status: 'Verification pending · Future-development reference', title: 'Menara Ethos, in focus.', description: 'Menara Ethos is included as a development to follow in the wider TRX district. Verified project particulars and current delivery status are still required. No completion date is represented.', source: null },
-      'cochrane-two': { index: '03', status: 'Verification pending · Future-development reference', title: 'Following Cochrane’s next chapter.', description: 'Binastra Cochrane 2 is included as a future-development reference. Its formal name, relationship to other Cochrane phases, approved particulars and timing require confirmation before factual project copy is published.', source: null }
+      cochrane: { category: 'transport', categoryLabel: 'Transport', title: 'Cochrane MRT', status: 'Existing transport', distance: '70m', description: 'Enjoy convenient access to Kuala Lumpur via the MRT Kajang Line, connecting Cochrane to TRX, Bukit Bintang and major city destinations.' },
+      maluri: { category: 'transport', categoryLabel: 'Transport', title: 'MRT Maluri', status: 'Existing MRT & LRT interchange', distance: '1.1km', description: 'An established MRT and LRT interchange to KL City Centre.' },
+      mytown: { category: 'lifestyle', categoryLabel: 'Shopping & Lifestyle', title: 'MyTOWN Shopping Centre & IKEA Cheras', status: 'Existing retail destination', distance: '60m', description: 'A major retail destination with over 400 retail stores offering shopping, dining, entertainment and lifestyle experiences all under one roof.' },
+      velocity: { category: 'lifestyle', categoryLabel: 'Shopping & Lifestyle', title: 'Sunway Velocity Mall', status: 'Existing retail destination', distance: '400m', description: 'An integrated shopping destination offering retail, dining, entertainment and everyday services.' },
+      berjaya: { category: 'lifestyle', categoryLabel: 'Shopping & Lifestyle', title: 'Berjaya Times Square', status: 'Existing retail destination', distance: '2.6km', description: 'A city-centre shopping and entertainment destination with a broad mix of retail and leisure offerings.' },
+      exchange: { category: 'lifestyle', categoryLabel: 'Shopping & Lifestyle', title: 'The Exchange TRX', status: 'Existing retail destination', distance: '3.4km', description: 'A contemporary retail and lifestyle destination within the Tun Razak Exchange financial district.' },
+      pavilionKl: { category: 'lifestyle', categoryLabel: 'Shopping & Lifestyle', title: 'Pavilion Kuala Lumpur', status: 'Existing retail destination', distance: '3.6km', description: 'A prominent Bukit Bintang destination offering international retail, dining and entertainment.' },
+      suria: { category: 'lifestyle', categoryLabel: 'Shopping & Lifestyle', title: 'Suria KLCC', status: 'Existing retail destination', distance: '4.9km', description: 'An established city-centre mall bringing together retail, dining and cultural attractions at KLCC.' },
+      smkCochrane: { category: 'education', categoryLabel: 'Education', title: 'SMK Cochrane', status: 'Existing school', distance: '220m', description: 'An established secondary school serving the Cochrane community.' },
+      sunwayCollege: { category: 'education', categoryLabel: 'Education', title: 'Sunway College @ Velocity', status: 'Existing education', distance: '430m', description: 'A city education centre supporting students with a range of academic pathways.' },
+      ideasSchool: { category: 'education', categoryLabel: 'Education', title: 'IDEAS International School', status: 'Existing school', distance: '1.1km', description: 'An international school offering a structured learning environment for its student community.' },
+      kunMing: { category: 'education', categoryLabel: 'Education', title: 'SJK(C) Kun Ming', status: 'Existing school', distance: '1.6km', description: 'An established Chinese primary school serving families in Kuala Lumpur.' },
+      taylors: { category: 'education', categoryLabel: 'Education', title: "Taylor's International School", status: 'Existing school', distance: '2.0km', description: 'An established international school providing education for its student community.' },
+      monashTrx: { category: 'education', categoryLabel: 'Education', title: 'Future Monash University TRX Campus', status: 'Announced future campus', distance: '4.0km', description: 'Monash University has announced a future Kuala Lumpur campus at TRX,bringing world-class education to Kuala Lumpur and enhancing the area long-term appeal.'},
+      medical: { category: 'healthcare', categoryLabel: 'Healthcare', title: 'Sunway Medical Centre Velocity', status: 'Existing healthcare', distance: '500m', description: 'An established medical centre providing healthcare services within the wider city district.' },
+      princeCourt: { category: 'healthcare', categoryLabel: 'Healthcare', title: 'Prince Court Medical Centre', status: 'Existing healthcare', distance: '2.7km', description: 'A private medical centre offering specialist and general healthcare services in Kuala Lumpur.' },
+      tungShin: { category: 'healthcare', categoryLabel: 'Healthcare', title: 'Tung Shin Hospital', status: 'Existing healthcare', distance: '4.5km', description: 'An established Kuala Lumpur hospital providing a range of medical and healthcare services.' }
     },
     enquiries: {
       hero: "I'd like to know more about Binastra Cochrane.",
@@ -28,7 +35,6 @@
       'floor-plans': 'Please share the approved Binastra Cochrane floor plans.',
       location: 'Could you share the verified Binastra Cochrane location and access details?',
       ethos: 'Please share verified updates on Menara Ethos in the wider TRX district.',
-      'cochrane-two': 'Please share verified details on Binastra Cochrane 2.',
       advisor: "I'd like your guidance on Binastra Cochrane.",
       mobile: "I'd like to enquire about Binastra Cochrane.",
       enquiry: "I'd like more information about Binastra Cochrane."
@@ -60,7 +66,6 @@
     link.addEventListener('click', () => {
       let item = link.dataset.wa;
       if (item === 'floor-plans') item = selectedPlan;
-      if (item === 'enquiry') item = $('#enquiry-interest').value;
       track('whatsapp_click', link.dataset.wa, item);
     });
   });
@@ -95,7 +100,7 @@
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') closeMenu(true);
   });
-  const desktopQuery = window.matchMedia('(min-width: 761px)');
+  const desktopQuery = window.matchMedia('(min-width: 901px)');
   desktopQuery.addEventListener('change', () => closeMenu());
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
@@ -117,23 +122,23 @@
     selectedPlan = button.dataset.plan;
     const plan = config.plans[selectedPlan];
     pressed(planButtons, button);
-    $('#plan-title').textContent = plan.title;
-    $('#plan-description').textContent = plan.description;
     $('#plan-image').src = plan.image;
-    $('#plan-image').alt = `Demonstration ${plan.title.toLowerCase()}; illustrative linework, not an approved project floor plan`;
-    $('#plan-enquiry').href = whatsapp(`Please share the approved Binastra Cochrane floor plans. I was exploring ${plan.title.toLowerCase()}, a demonstration placeholder on your website, and would like to see the actual available layouts.`);
+    $('#plan-image').alt = `${plan.title} floor plan`;
     track('floor_plan_select', 'floor-plans', selectedPlan);
   }));
 
-  // The explorer is deliberately schematic, with existing amenities only.
+  // Existing destinations and the announced future Monash campus are labelled distinctly.
   const locationFilters = $$('[data-location-filter]');
   const destinationButtons = $$('[data-destination]');
   function selectDestination(key) {
     const place = config.locations[key];
     pressed(destinationButtons, $(`[data-destination="${key}"]`));
+    $('#destination-category').textContent = place.categoryLabel.toUpperCase();
     $('#destination-title').textContent = place.title;
     $('#destination-status').textContent = place.status.toUpperCase();
     $('#destination-description').textContent = place.description;
+    const distance = $('#destination-distance');
+    distance.textContent = place.distance ? `${place.distance} from Binastra Cochrane` : 'Distance to be confirmed';
     $$('[data-map]').forEach(marker => marker.classList.toggle('is-active', marker.dataset.map === key));
   }
   function filterLocations(category) {
@@ -153,89 +158,91 @@
   }));
   filterLocations('transport');
 
-  const milestoneButtons = $$('[data-milestone]');
-  milestoneButtons.forEach(button => button.addEventListener('click', () => {
-    const key = button.dataset.milestone;
-    const milestone = config.milestones[key];
-    pressed(milestoneButtons, button);
-    $('#milestone-index').textContent = milestone.index;
-    $('#milestone-status').textContent = milestone.status.toUpperCase();
-    $('#milestone-title').textContent = milestone.title;
-    $('#milestone-description').textContent = milestone.description;
-    const source = $('#milestone-source');
-    source.hidden = !milestone.source;
-    if (milestone.source) source.href = milestone.source;
-    else source.removeAttribute('href');
-    track('timeline_select', 'timeline', key);
-  }));
-
-  // The native dialog supplies focus containment and Escape handling.
-  const galleryItems = $$('.gallery-item');
-  const galleryFilters = $$('[data-gallery-filter]');
-  const dialog = $('#gallery-dialog');
+  const gallerySlider = $('.property-slider');
+  const gallerySlides = $$('.gallery-slide', gallerySlider);
+  const galleryDots = $$('[data-gallery-slide]', gallerySlider);
   let galleryIndex = 0;
-  let galleryTrigger = null;
-  const visibleGallery = () => galleryItems.filter(item => !item.hidden);
-  function renderViewer() {
-    const items = visibleGallery();
-    const item = items[galleryIndex];
-    const image = $('img', item);
-    $('#viewer-image').src = $('a', item).href;
-    $('#viewer-image').alt = image.alt;
-    $('#viewer-title').textContent = $('figcaption > span', item).textContent;
-    $('#viewer-note').textContent = $('figcaption > small', item).textContent;
-    $('#viewer-counter').textContent = `${String(galleryIndex + 1).padStart(2, '0')} / ${String(items.length).padStart(2, '0')} — GALLERY`;
-    $('#viewer-prev').disabled = items.length < 2;
-    $('#viewer-next').disabled = items.length < 2;
+  let swipeStartX = null;
+  function renderGallery(index, trackSelection = false) {
+    galleryIndex = (index + gallerySlides.length) % gallerySlides.length;
+    gallerySlides.forEach((slide, slideIndex) => {
+      const active = slideIndex === galleryIndex;
+      slide.classList.toggle('is-active', active);
+      slide.setAttribute('aria-hidden', String(!active));
+    });
+    pressed(galleryDots, galleryDots[galleryIndex]);
+    const activeSlide = gallerySlides[galleryIndex];
+    const title = $('figcaption strong', activeSlide).textContent.trim();
+    $('#gallery-status').textContent = `${String(galleryIndex + 1).padStart(2, '0')} / ${String(gallerySlides.length).padStart(2, '0')} — ${title}`;
+    if (trackSelection) track('gallery_slide', 'gallery', activeSlide.dataset.galleryId);
   }
   function moveGallery(direction) {
-    galleryIndex = (galleryIndex + direction + visibleGallery().length) % visibleGallery().length;
-    renderViewer();
+    renderGallery(galleryIndex + direction, true);
   }
-  galleryFilters.forEach(button => button.addEventListener('click', () => {
-    const category = button.dataset.galleryFilter;
-    pressed(galleryFilters, button);
-    galleryItems.forEach(item => { item.hidden = category !== 'all' && item.dataset.galleryCategory !== category; });
-    const count = visibleGallery().length;
-    $('#gallery-count').textContent = `${count} image${count === 1 ? '' : 's'} · Select an image to explore`;
-    track('gallery_filter', 'gallery', category);
-  }));
-  galleryItems.forEach(item => {
-    const link = $('a', item);
-    link.addEventListener('click', event => {
-      if (typeof dialog.showModal !== 'function' || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
-      galleryTrigger = link;
-      galleryIndex = visibleGallery().indexOf(item);
-      renderViewer();
-      dialog.showModal();
-      document.body.classList.add('modal-open');
-      $('#viewer-close').focus();
-      track('gallery_open', 'gallery', link.dataset.galleryId);
-    });
-  });
-  $('#viewer-close').addEventListener('click', () => dialog.close());
-  $('#viewer-prev').addEventListener('click', () => moveGallery(-1));
-  $('#viewer-next').addEventListener('click', () => moveGallery(1));
-  dialog.addEventListener('keydown', event => {
+  $('#gallery-prev').addEventListener('click', () => moveGallery(-1));
+  $('#gallery-next').addEventListener('click', () => moveGallery(1));
+  galleryDots.forEach(button => button.addEventListener('click', () => renderGallery(Number(button.dataset.gallerySlide), true)));
+  gallerySlider.addEventListener('keydown', event => {
     if (event.key === 'ArrowRight') { event.preventDefault(); moveGallery(1); }
     if (event.key === 'ArrowLeft') { event.preventDefault(); moveGallery(-1); }
   });
-  dialog.addEventListener('click', event => {
-    if (event.target !== dialog) return;
-    const bounds = dialog.getBoundingClientRect();
-    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+  gallerySlider.addEventListener('pointerdown', event => {
+    if (event.target.closest('button')) return;
+    swipeStartX = event.clientX;
   });
-  dialog.addEventListener('close', () => {
-    document.body.classList.remove('modal-open');
-    if (galleryTrigger?.isConnected && !galleryTrigger.closest('[hidden]')) galleryTrigger.focus({ preventScroll: true });
+  gallerySlider.addEventListener('pointerup', event => {
+    if (swipeStartX === null) return;
+    const distance = event.clientX - swipeStartX;
+    swipeStartX = null;
+    if (Math.abs(distance) > 45) moveGallery(distance < 0 ? 1 : -1);
   });
+  gallerySlider.addEventListener('pointercancel', () => { swipeStartX = null; });
+  renderGallery(0);
 
-  const interest = $('#enquiry-interest');
-  interest.addEventListener('change', () => {
-    $('#enquiry-link').href = whatsapp(config.interests[interest.value]);
-    track('enquiry_topic_select', 'enquiry', interest.value);
-  });
+  const contactForm = $('#contact-form');
+  if (contactForm) {
+    const submitButton = $('button[type="submit"]', contactForm);
+    const submitLabel = $('.submit-label', contactForm);
+    const formStatus = $('#form-status');
+    let isSubmitting = false;
+
+    contactForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (isSubmitting || !contactForm.reportValidity()) return;
+
+      isSubmitting = true;
+      submitButton.disabled = true;
+      submitLabel.textContent = 'SENDING…';
+      formStatus.className = 'form-status';
+      formStatus.textContent = 'Sending your enquiry…';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || result.success === 'false' || result.success === false) {
+          throw new Error('Submission was not accepted.');
+        }
+
+        contactForm.reset();
+        formStatus.className = 'form-status is-success';
+        formStatus.textContent = 'Thank you. Your enquiry has been sent successfully.';
+        track('enquiry_submit', 'contact', 'success');
+      } catch (error) {
+        formStatus.className = 'form-status is-error';
+        formStatus.textContent = 'We could not send your enquiry. Please try again or contact us on WhatsApp.';
+        track('enquiry_submit', 'contact', 'error');
+      } finally {
+        isSubmitting = false;
+        submitButton.disabled = false;
+        submitLabel.textContent = 'SUBMIT';
+      }
+    });
+  }
+
   function openPrivacyFromHash() {
     if (window.location.hash === '#privacy') $('#privacy').open = true;
   }

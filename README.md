@@ -1,13 +1,13 @@
 # Binastra Cochrane — Phase 1
 
-A standalone luxury property homepage in HTML5, CSS and vanilla JavaScript. Local preview only. No build, framework, package installation, backend or advertising tags.
+A standalone luxury property homepage in HTML5, CSS and vanilla JavaScript. The current design follows the conversion-focused flow of Bangsar Projects: image-led hero, benefits, location, transit, layouts, project briefing, future developments, gallery, advisor and enquiry. Cochrane’s content and branding remain distinct.
 
 ## Preview locally
 
 From this project directory:
 
 ```sh
-cd /Users/mehannair/Desktop/Binastra_Website/binastra-cochrane
+cd /Users/mehannair/Desktop/Binastra_Website
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
@@ -20,7 +20,7 @@ This serves only this new project on your computer’s loopback interface. It do
 | File or directory | Purpose |
 | --- | --- |
 | `index.html` | Complete homepage, metadata, accessible content, independent-representative disclaimer, draft privacy notice and gallery dialog |
-| `styles.css` | Palette, local font declarations, editorial layouts, responsive navigation, device breakpoints and reduced-motion support |
+| `styles.css` | Reference-inspired dark teal, ivory, gold and WhatsApp-green design system, responsive navigation and component layouts |
 | `script.js` | Editable data/configuration, selectors, filters, location explorer, timeline, gallery viewer, WhatsApp message generation and local tracking queue |
 | `assets/images/` | Optimised project-reference imagery, labelled illustrative photos and three demonstration SVG layout studies |
 | `assets/fonts/` | Local Latin WOFF2 fonts and their Open Font License notices |
